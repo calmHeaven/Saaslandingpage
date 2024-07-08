@@ -60,17 +60,54 @@ header {
   font-weight: 300;
   
 }
- .nav-links .features > a::before{
+ .nav-links .features:hover::before{
    content: "";
   position: absolute;
-  bottom: 94%;
-  left: 0;
-  width: 0px;
+  bottom: 93%;
+  left: 39.9%;
+  width: 5%;
   height: 4px;
   border-radius: 1em;
-  background-color: #03e9f4;
+background-color: #03e9f4;
   box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
-  transition: 0.4s ease;
+  transition: 0.7s ease;
+}
+ .nav-links .features:hover::before{
+   content: "";
+  position: absolute;
+  bottom: 93%;
+  left: 39.9%;
+  width: 5%;
+  height: 4px;
+  border-radius: 1em;
+background-color: #03e9f4;
+  box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+      transition: all 0.7s ease 0s;
+}
+
+ .nav-links .how-it-works:hover::before{
+   content: "";
+  position: absolute;
+  bottom: 93%;
+  left: 50.2%;
+  width: 8%;
+  height: 4px;
+  border-radius: 1em;
+background-color: #03e9f4;
+  box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  transition: 0.7s ease;
+}
+ .nav-links .contact:hover::before{
+   content: "";
+  position: absolute;
+  bottom: 93%;
+  left: 63.5%;
+  width: 5%;
+  height: 4px;
+  border-radius: 1em;
+background-color: #03e9f4;
+  box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  transition: 0.7s ease;
 }
 .nav-links h1::before{
    content: "";
@@ -82,7 +119,23 @@ header {
   border-radius: 1em;
   background-color: #03e9f4;
   box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  transition: all 0.7s ease;
+}
+.nav-links .feature ::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0px;
+  height: 4px;
+  border-radius: 1em;
+  background-color: #03e9f4;
+  box-shadow: 0 0 10px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
   transition: 0.4s ease;
+}
+
+.nav-links .feature:hover::before {
+  width: 100%; /* Adjust as needed */
 }
 
 
@@ -157,25 +210,28 @@ header {
 .signup-btn:hover {
   outline: none;
   
-  /* background-image: linear-gradient( 
-    to bottom right,#962121,#6a3535,#34234b,#1f3e48);;*/
+  background-image: linear-gradient( 
+    to bottom right,#962121,#6a3535,#34234b,#1f3e48);;
      box-shadow: 0px 15px 20px rgba(0, 175, 238, 0.4);
   color: #fff;
   transform: translateY(-7px);
+    transition: all 0.7s ease 0s;
+
 }
 .login-btn:hover {
     outline: none;
   
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to bottom right,
     #962121,
     #6a3535,
     #34234b,
     #1f3e48
-  );; */
+  );;
   box-shadow: 0px 15px 20px rgba(0, 175, 238, 0.4);
   color: #fff;
   transform: translateY(-7px);
+  transition: all 0.7s ease 0s;
 }
 .waitlistmail {
   background-color: #dddddd;
@@ -277,4 +333,6 @@ footer {
   width: 100%;
   border-top-left-radius: 10%;
   border-top-right-radius: 0%;
+  position: sticky;
+  z-index: 1;
 }
