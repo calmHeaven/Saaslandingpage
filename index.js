@@ -17,7 +17,6 @@ document.getElementById('waitlist-form').addEventListener('click', function() {
     .then(data => {
         console.log('Waitlist registration successful', data);
         alert('Thank you for signing up! We will notify you when we launch. 👊🏿');
-        location.href = 'https://127.0.0.1:3000/typage.html';
         // Redirect to another page, show success message, or perform other actions
     })
     .catch(error => {
