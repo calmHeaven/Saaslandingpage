@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('waitlistForm').addEventListener('submit', function (event) {
         document.getElementById('waitlistForm').addEventListener('submit', function () {
-        let submission = docuemtn.getElementById('');
+        let submission = document.getElementById('');
+        submission='';
         });
             //event.preventDefault(); // Prevent the default form submission
 
@@ -34,6 +35,5 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error('Error joining waitlist:', error);
                     alert('Error joining waitlist: ' + error.message);
                 });
-        });
     });
 });
