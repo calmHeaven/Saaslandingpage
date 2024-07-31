@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('waitlistForm').addEventListener('submit', function (event) {
         document.getElementById('waitlistForm').addEventListener('submit', function () {
-        let submission = document.getElementById('');
+        let submission = document.getElementById('submission-button');
         submission='';
         });
             //event.preventDefault(); // Prevent the default form submission
